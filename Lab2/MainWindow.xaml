@@ -1,0 +1,21 @@
+﻿<Window x:Class="Lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFFFFFFF">
+        <DataGrid Name="grid" AutoGeneratingColumn="Grid_AutoGeneratingColumn" ColumnWidth="*" Margin="10,5,10,45" IsReadOnly="True" Grid.ColumnSpan="2"/>
+        <StackPanel Margin="10,0,0,10" Orientation="Horizontal" HorizontalAlignment="Left" Width="450" Height="30" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
+            <Button Content="To First" Click="ToFirstPage" Height="30" Margin="0,0,5,0" Width="80"/>
+            <Button Content="Previous" Click="ToPreviousPage" Height="30" Margin="0,0,10,0" Width="80"/>
+            <TextBlock Name="pageBlock" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,10,0" Width="100"/>
+            <Button Content="Next" Click="ToNextPage" Height="30" Margin="0,0,5,0" Width="80"/>
+            <Button Content="To Last" Click="ToLastPage" Height="30" Margin="0,0,0,0" Width="80"/>
+        </StackPanel>
+        <Button Content="Refresh" Click="Refresh" HorizontalAlignment="Right" Margin="0,0,141,10" VerticalAlignment="Bottom" Width="125" Height="30"/>
+        <Button Content="Show" Click="ShowInfo"  HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="125" Height="30"/>
+    </Grid>
+</Window>
